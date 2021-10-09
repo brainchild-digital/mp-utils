@@ -7,6 +7,14 @@
 3. px & rpx converter
 4. Other
 
+## Installation
+
+Using npm:
+
+```bash
+npm i @codesmiths/mp-utils
+```
+
 ### Mini Program DOM
 
 * querySelect(classOrId, component)
