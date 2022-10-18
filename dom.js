@@ -26,6 +26,16 @@ const getElementHeight = (cssId, component) => new Promise((resolve) => {
   }
 });
 
+const getNavHeight = () => {
+  const navbar = getCurrentPages().pop().selectComponent('#navbar');
+  return getElementHeight('#navbar', navbar);
+}
+
+const getTabHeight = () => {
+  const tabbar = getCurrentPages().pop().selectComponent('#tabbar');
+  return getElementHeight('#tabbar', tabbar);
+}
+
 module.exports = {
-  querySelect, getElementHeight,
+  querySelect, getElementHeight, getNavHeight, getTabHeight,
 };
